@@ -16,7 +16,6 @@ Clone the repository using the following command
 ```bash
 git clone https://github.com/Ajayvardhanreddy/FreJun_task.git
 # After cloning, move into the directory having the project files using the change directory command
-cd finanancepeer_assessment
 ```
 Create a virtual environment where all the required python packages will be installed
 
@@ -40,7 +39,7 @@ pip install -r requirements.txt
 ```
 ## Create Project
 
-We can now start a Django project within our `finanancepeer_assessment` directory. This will create a child directory of the same name to hold the code itself, and will create a management script within the current directory. Make sure to add the dot at the end of the command so that this is set up correctly:
+We can now start a Django project within our `FreJun_task` directory. This will create a child directory of the same name to hold the code itself, and will create a management script within the current directory. Make sure to add the dot at the end of the command so that this is set up correctly:
 ```bash
 django-admin startproject FreJun_task .
 ```

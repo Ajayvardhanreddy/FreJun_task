@@ -105,7 +105,6 @@ def task(request):
         '''
         taskjson = json.loads(request.body.decode("utf-8"))
         member_present = TeamsData.objects.filter(team_member_id=taskjson['team_member'])
-        print(member_present, taskjson['team_member'])
         if member_present[0].status_of_member:
             return JsonResponse({"success": False, "msg": "team member is not available"})
 
@@ -164,12 +163,3 @@ def logout(request):
     del request.session['username']
     return JsonResponse({"success": True, "msg": "Team Leader logged out successfully!"})
 
-'''
-
-DELETE FROM "Tracker_taskdata"
-WHERE id=2;
-
-SELECT * FROM public."Tracker_taskdata"
-ORDER BY id 
-DELETE FROM "Tracker_teamsdata";
-'''
